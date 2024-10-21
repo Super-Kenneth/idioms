@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDIOMS</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="w-screen h-screen flex flex-row gap-x-6 bg-[url('./img/bg.svg')] bg-cover p-6"
+  >
+    <div class="h-full w-[50%] flex flex-col gap-y-6">
+      <div class="bg-white bg-opacity-50 rounded-xl p-6">
+        <label for="test_input">Choose number of IDIOMS [1-10]</label>
+        <input
+          id="test_input"
+          type="number"
+          min="1"
+          max="10"
+          class="border border-black p-1 outline-none"
+        />
+        <button id="proceed_btn" class="border p-2 rounded-xl bg-white ml-4">
+          Proceed
+        </button>
+      </div>
+      <div id="idioms_container" class="bg-white bg-opacity-50 rounded-xl p-6">
+        <h1 class="text-2xl">List of IDIOMS</h1>
+        <p id="idiom_count" class="text-xl">(Choose [0] only)</p>
+        <ol id="idioms_list" class="text-xl mt-2">
+          <li>
+            <input id="num1" type="checkbox" disabled />
+            <label for="num1">A blessing in disguise</label>
+          </li>
+          <li>
+            <input id="num2" type="checkbox" disabled />
+            <label for="num2">Beat around the bush</label>
+          </li>
+          <li>
+            <input id="num3" type="checkbox" disabled />
+            <label for="num3">Cutting corners</label>
+          </li>
+          <li>
+            <input id="num4" type="checkbox" disabled />
+            <label for="num4">Easy does it</label>
+          </li>
+          <li>
+            <input id="num5" type="checkbox" disabled />
+            <label for="num5">Get out of hand</label>
+          </li>
+          <li>
+            <input id="num6" type="checkbox" disabled />
+            <label for="num6">Hang in there</label>
+          </li>
+          <li>
+            <input id="num7" type="checkbox" disabled />
+            <label for="num7">Make a long story short</label>
+          </li>
+          <li>
+            <input id="num8" type="checkbox" disabled />
+            <label for="num8">No pain, no gain</label>
+          </li>
+          <li>
+            <input id="num9" type="checkbox" disabled />
+            <label for="num9">Speak of the devil</label>
+          </li>
+          <li>
+            <input id="num10" type="checkbox" disabled />
+            <label for="num10">No pain, no gain</label>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div
+      class="w-[50%] h-full overflow-y-scroll bg-white bg-opacity-50 rounded-xl p-6"
+    >
+      <h1 class="text-2xl">Letters of IDIOMS</h1>
+      <ol id="letters_list" class="text-lg">
+        <li>Aa: <span id="count_a">0</span></li>
+        <li>Bb: <span id="count_b">0</span></li>
+        <li>Cc: <span id="count_c">0</span></li>
+        <li>Dd: <span id="count_d">0</span></li>
+        <li>Ee: <span id="count_e">0</span></li>
+        <li>Ff: <span id="count_f">0</span></li>
+        <li>Gg: <span id="count_g">0</span></li>
+        <li>Hh: <span id="count_h">0</span></li>
+        <li>Ii: <span id="count_i">0</span></li>
+        <li>Jj: <span id="count_j">0</span></li>
+        <li>Kk: <span id="count_k">0</span></li>
+        <li>Ll: <span id="count_l">0</span></li>
+        <li>Mm: <span id="count_m">0</span></li>
+        <li>Nn: <span id="count_n">0</span></li>
+        <li>Oo: <span id="count_o">0</span></li>
+        <li>Pp: <span id="count_p">0</span></li>
+        <li>Qq: <span id="count_q">0</span></li>
+        <li>Rr: <span id="count_r">0</span></li>
+        <li>Ss: <span id="count_s">0</span></li>
+        <li>Tt: <span id="count_t">0</span></li>
+        <li>Uu: <span id="count_u">0</span></li>
+        <li>Vv: <span id="count_v">0</span></li>
+        <li>Ww: <span id="count_w">0</span></li>
+        <li>Xx: <span id="count_x">0</span></li>
+        <li>Yy: <span id="count_y">0</span></li>
+        <li>Zz: <span id="count_z">0</span></li>
+      </ol>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
