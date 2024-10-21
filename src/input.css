@@ -9,21 +9,3 @@
 #idioms_container {
   display: none;
 }
-
-@media (max-width: 640px) {
-  body {
-    padding: 1rem;
-  }
-
-  .text-2xl {
-    font-size: 1.5rem; /* Adjust size for smaller screens */
-  }
-
-  .text-xl {
-    font-size: 1.25rem; /* Adjust size for smaller screens */
-  }
-
-  .text-lg {
-    font-size: 1rem; /* Adjust size for smaller screens */
-  }
-}
